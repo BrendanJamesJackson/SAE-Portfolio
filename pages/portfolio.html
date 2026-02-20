@@ -1,0 +1,236 @@
+<!-- Games Portfolio Section -->
+<section class="portfolio-section">
+  <h2 class="blueClass yellow-outline-shadow">Game Design</h2>
+  <p class="stdText">
+    Here are some of my most recent and favourite projects - you can check out
+    the rest of my games on my Itch.io page.
+  </p>
+
+  <a
+    href="https://brendan-jax.itch.io/"
+    target="_blank"
+    rel="noopener"
+    class="StandardBtn itch-btn"
+  >
+    <img src="../Images/itch.io.png" alt="itch logo" />
+    itch.io
+  </a>
+
+  <div class="games-grid">
+    <!-- GAME CAPSULE BLOCK - Duplicate this for each game -->
+    <div
+      class="game-capsule capsuleBlue"
+      data-game-id="pttp"
+      data-game-title="Power to the People"
+      data-game-description="Power to the People is a strategy simulation about energy justice, challenging players to balance environmental sustainability, economic demands, and social equity while building renewable energy infrastructure inspired by the Just Energy Transition.|I handled the programming and core game design, while supporting narrative development to ensure strong ludo-narrative alignment. This project strengthened my ability to translate complex real-world systems into meaningful and engaging player choices."
+      data-game-tags="Game Design,Level Design,Systems Design,Programming,Narrative"
+      data-game-images="../Images/PttP/Power to the People.png,../Images/PttP/PttPScreenshot.png,../Images/PttP/PttPScreenshot2.png"
+      data-game-itch="https://brendan-jax.itch.io/power-to-the-people"
+      data-game-doc="../path/to/design-doc.pdf"
+      onclick="openGameModal(event)"
+    >
+      <div class="capsule-image-container">
+        <img
+          src="../Images/PttP/Power to the People.png"
+          alt="Power to the People"
+        />
+      </div>
+      <div class="capsule-content">
+        <h3 class="purpleClass yellow-outline-shadow">Power to the People</h3>
+        <button class="StandardBtn" onclick="openGameModal(event)">
+          More Info
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="game-capsule capsuleBlue"
+      data-game-id="Start.exe"
+      data-game-title="Start.exe"
+      data-game-description="Start.exe is a retro Windows 98-inspired bullet hell where players survive waves of corrupted pop-ups, rogue software, and chaotic system errors while avoiding the inevitable Blue Screen of Death.|Developed as a solo project for the Inbound Shovel Game Jam, I handled all programming, game design, and the creation of enemies, bosses, and player abilities. This project strengthened my ability to scope, execute, and polish a complete gameplay experience independently under time constraints.|"
+      data-game-tags="Programming,Game Design, Systems Design"
+      data-game-images="../Images/Start.exe/Start.exe.png,../Images/Start.exe/S1.png,../Images/Start.exe/S2.png,../Images/Start.exe/S3.png,../Images/Start.exe/S4.png"
+      data-game-itch="https://brendan-jax.itch.io/startexe"
+      data-game-doc="../path/to/doc.pdf"
+      onclick="openGameModal(event)"
+    >
+      <div class="capsule-image-container">
+        <img src="../Images/Start.exe/Start.exe.png" alt="Start.exe" />
+      </div>
+      <div class="capsule-content">
+        <h3 class="purpleClass yellow-outline-shadow">Start.exe</h3>
+        <button class="StandardBtn" onclick="openGameModal(event)">
+          More Info
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="game-capsule capsuleBlue"
+      data-game-id="Mighty Mzansi"
+      data-game-title="Mighty Mzansi"
+      data-game-description="Mighty Mzansi is a 2D endless runner where players control a South African superhero flying through the streets of Johannesburg, battling alien invaders while navigating fast-paced urban obstacles. The game was developed for MTN’s Mzansi Gaming Platform and is exclusively playable on the service.|I was responsible for all programming and game design. This project strengthened my skills in designing engaging endless-runner progression systems and optimising gameplay experiences for platform-specific requirements.|"
+      data-game-tags="Programming,Game Design"
+      data-game-images="../Images/MM/M1.png,../Images/MM/M2.png,../Images/MM/M3.png,../Images/MM/M4.png"
+      onclick="openGameModal(event)"
+    >
+      <div class="capsule-image-container">
+        <img src="../Images/MM/M1.png" alt="Mighty Mzansi" />
+      </div>
+      <div class="capsule-content">
+        <h3 class="purpleClass yellow-outline-shadow">Mighty Mzansi</h3>
+        <button class="StandardBtn" onclick="openGameModal(event)">
+          More Info
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="game-capsule capsuleBlue"
+      data-game-id="C.H.I.P."
+      data-game-title="C.H.I.P."
+      data-game-description="C.H.I.P. is a wave-based FPS where players fight against a machine uprising, collecting cogs to purchase weapons and upgrades while using strategic map awareness to survive increasingly difficult enemy waves.|Created as a university project, I led the game and systems design, narrative development, balancing, and iterative playtesting. This project strengthened my ability to design scalable combat systems and reinforced the importance of player strategy, progression pacing, and continuous iteration.|"
+      data-game-tags="Game Design,Systems Design,Level Design,Narrative"
+      data-game-images="../Images/CHIP/1.png,../Images/CHIP/2.jpg,../Images/CHIP/3.jpg,../Images/CHIP/4.jpg,../Images/CHIP/5.jpg,../Images/CHIP/6.jpg"
+      data-game-itch="https://chipteamatwits.itch.io/chip"
+      onclick="openGameModal(event)"
+    >
+      <div class="capsule-image-container">
+        <img src="../Images/CHIP/1.png" alt="C.H.I.P." />
+      </div>
+      <div class="capsule-content">
+        <h3 class="purpleClass yellow-outline-shadow">C.H.I.P.</h3>
+        <button class="StandardBtn" onclick="openGameModal(event)">
+          More Info
+        </button>
+      </div>
+    </div>
+
+    <!-- END GAME CAPSULE BLOCK -->
+  </div>
+</section>
+
+<!-- Game Detail Modal -->
+<div id="gameModal" class="game-modal">
+  <div class="modal-overlay" onclick="closeGameModal(event)"></div>
+
+  <div class="modal-content">
+    <!-- Close button -->
+    <button class="modal-close" onclick="closeGameModal()">&times;</button>
+
+    <div class="modal-main">
+      <!-- Left side: Images -->
+      <div class="modal-left">
+        <div class="main-image-container">
+          <button class="nav-arrow left-arrow" onclick="previousImage()">
+            &lt;
+          </button>
+          <img
+            id="mainGameImage"
+            src="../Images/PttP/Power to the People.png"
+            alt="Game screenshot"
+          />
+          <button class="nav-arrow right-arrow" onclick="nextImage()">
+            &gt;
+          </button>
+        </div>
+
+        <div class="thumbnail-container" id="thumbnailContainer">
+          <!-- Thumbnails populated dynamically -->
+        </div>
+      </div>
+
+      <!-- Right side: Info -->
+      <div class="modal-right">
+        <h2 id="gameTitle">Game Title</h2>
+
+        <div class="game-tags" id="gameTags">
+          <!-- Tags populated dynamically -->
+        </div>
+
+        <div id="gameDescriptionContainer">
+          <!-- Description paragraphs populated dynamically -->
+        </div>
+
+        <div class="modal-buttons">
+          <a
+            id="itchButton"
+            href="https://itch.io"
+            target="_blank"
+            class="modal-btn itch-btn StandardBtn"
+            >Play on itch.io</a
+          >
+          <a
+            id="docButton"
+            href="#"
+            target="_blank"
+            class="modal-btn doc-btn StandardBtn"
+            >View Design Document</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Narrative & Props Portfolio Section -->
+<section class="portfolio-section">
+  <h2 class="blueClass yellow-outline-shadow">Narrative & Prop Design</h2>
+  <p class="stdText">
+    A project combining narrative development, prop design, and physical
+    manufacturing.
+  </p>
+
+  <div class="games-grid">
+    <!-- PROJECT CAPSULE - single project -->
+    <div
+      class="game-capsule capsuleBlue"
+      data-project-id="prop-project-1"
+      data-project-title="Arcamira: The Peace-Bringer"
+      data-project-description="Arcamira: The Peace-Bringer was a multidisciplinary worldbuilding project centred around the creation of a single narrative-driven prop: the sword Arcamira. The project combined concept art, narrative design, and physical prop manufacturing to bring a lore-rich artefact to life. | I developed the concept art, narrative context, prop design, and constructed the physical sword. This project strengthened my ability to translate story and visual design into tangible objects while reinforcing environmental storytelling and cohesive worldbuilding.|"
+      data-project-tags="Art,Narrative,Prop Design,Manufacturing"
+      data-project-images="../Images/DesignProj/Capture2.PNG,../Images/DesignProj/concept.png,../Images/DesignProj/Poster.png,../Images/DesignProj/drawing.png"
+      data-project-video="https://www.youtube.com/watch?v=SiZNgkHCVsM"
+      onclick="openProjectModal(event)"
+    >
+      <div class="capsule-image-container">
+        <img src="../Images/DesignProj/1.png" alt="Props project" />
+      </div>
+      <div class="capsule-content">
+        <h3 class="purpleClass yellow-outline-shadow">
+          Arcamira: The Peace-Bringer
+        </h3>
+        <button class="StandardBtn" onclick="openProjectModal(event)">
+          More Info
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Detail Modal -->
+<div id="projectModal" class="game-modal">
+  <div class="modal-overlay" onclick="closeProjectModal(event)"></div>
+
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+
+    <div class="modal-main">
+      <div class="modal-left">
+        <div class="main-image-container project-main-media">
+          <!-- Carousel content (video or image) injected dynamically -->
+        </div>
+
+        <div class="thumbnail-container" id="projectThumbnailContainer"></div>
+      </div>
+
+      <div class="modal-right">
+        <h2 id="projectTitle">Project Title</h2>
+
+        <div class="game-tags" id="projectTags"></div>
+
+        <div id="projectDescriptionContainer"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c2c2c2;
+}
+
+.purpleClass
+{
+    color: #782787;
+    font-family: "Fugaz One";
+}
+
+.blueClass
+{
+    color: #3d7eb8;
+    font-family: "Fugaz One";
+}
+
+.yellow-outline-shadow {
+  text-shadow:
+    1px 1px 0 #ffd200,
+    -1px -1px 0 #ffd200,
+    1px -1px 0 #ffd200,
+    -1px 1px 0 #ffd200; /* Yellow hex code */
+}
+
+.stdText
+{
+  font-family: "Sniglet";
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  padding-top: 0px;
+}
+
+
+/* Banner styles */
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Particles background container (behind all page content) */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ensure main site content sits above particles */
+.banner, main#content, footer {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Overlay container for logo and nav */
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3% 0% 10%;
+  width: 100%;
+  height: 70%;
+  box-sizing: border-box;
+}
+
+.logo{
+    height: 90%;
+}
+
+.logo img {
+  height: 100%;
+  object-fit: contain;
+      position: relative;
+    top: 4%;
+}
+
+.PageHeading
+{
+    position: relative;
+    font-size: 2.8em;
+      font-family: 'Segoe UI', 'Arial Rounded MT Bold', Arial, sans-serif;
+font-weight: bold;
+  background: linear-gradient(90deg,  #3d7eb8, #782787);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0 20px;
+  letter-spacing: 2px;
+  align-self: center;
+}
+
+
+/* Navigation inside the banner */
+/*.menu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}*/
+
+.menu a:hover {
+  text-decoration: underline;
+  color: #ffd200;
+}
+
+
+.menu a {
+  position: relative;
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  z-index: 1;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% + 16px);
+  height: 2.2em;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb); /* Start and end colors */
+  border-radius: 1em;
+  opacity: 0;
+  transition: opacity 0.3s, background 1s;
+  z-index: -1;
+  
+}
+
+.menu a:hover::after {
+  opacity: 1;
+  background: linear-gradient(90deg, #782787, #3d7eb8); /* Lerp to these colors on hover */
+}
+
+.menu
+{
+    position: relative;
+    top: 15%;
+}
+
+footer{
+  border-top: 2px solid #000;
+  margin-top: 40px; /* optional: adds space above the line */
+  padding-top: 20px; /* optional: adds space inside the footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.bubble-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* allows clicks through */
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bubble-bg img {
+  position: absolute;
+  opacity: 0.6;
+  border-radius: 50%;
+  animation: float 20s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+.footerImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3
+{
+  margin: 0%;
+}
+
+.footerImages img {
+  filter: none;
+  /*transition: filter 0.3s;*/
+  height: 3em;
+  width: auto;
+}
+
+
+.footerImages a:hover img {
+  animation: bubbleColorAnim 1s alternate infinite;
+}
+
+@keyframes bubbleColorAnim {
+  0% {
+    filter: invert(34%) sepia(99%) saturate(7477%) hue-rotate(196deg) brightness(97%) contrast(101%); /* blue */
+  }
+  100% {
+    filter: invert(16%) sepia(99%) saturate(7477%) hue-rotate(270deg) brightness(97%) contrast(101%); /* purple */
+  }
+}
+
+.HomeContent img
+{
+  position: relative;
+  border-radius: 30%;
+  width: 30%;
+  height: auto;
+  top: 10%;
+}
+
+.HomeContent
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+  position: relative;
+    top: -60px;
+}
+
+.HomeText
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 55%;
+}
+
+.HomeContent h2{
+  margin: 0%;
+  font-size: 2.5rem;
+  font-weight: normal;
+  position: relative;
+  bottom: -.75em
+  ;
+}
+
+
+.HomeContent h1{
+  margin: 0%;
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+
+
+
+.HomeContent p{
+  margin: auto;
+    font-family: "Sniglet";
+  font-weight: normal;
+  font-size: large;
+  margin-bottom: 2%;
+}
+
+.HomeContent h3{
+  font-style: italic;
+  margin-top: 0%;
+    font-family: "Sniglet";
+  font-weight: normal;
+  margin-bottom: 1%;
+}
+
+.StandardBtn {
+ position: relative;
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  z-index: 1;
+  overflow: hidden;
+  font-family: sans-serif;
+  border: 3px solid white;
+  padding: 8px 16px;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50px;
+}
+
+
+.StandardBtn:hover {
+  background: linear-gradient(90deg, #782787, #3d7eb8);
+  color: #ffd200;
+  border: 3px solid #ffd200;
+  transition: 0.3s;
+}
+
+.AboutSectionContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.AboutSectionContainer h2
+{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* About Me two-column layout */
+.about-row {
+  display: flex;
+  gap: 24px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 16px 0 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 2;
+  min-width: 0;
+}
+
+.about-text p {
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+  font-family: "Sniglet";
+}
+
+.about-cta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-cta .StandardBtn {
+  margin-left: 0;
+}
+
+.pdf-preview {
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.pdf-preview iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .about-row { flex-direction: column; }
+  .about-cta { align-items: stretch; }
+  .pdf-preview { max-width: 100%; }
+}
+
+/* Contact page styles */
+.contact-container { padding-bottom: 20px; }
+.contact-row {
+  display: flex;
+  gap: 28px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 16px 0 40px;
+}
+.contact-left { flex: 1; min-width: 0; }
+.contact-right { flex: 1; min-width: 0; }
+
+.contact-links {     display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+    align-items: center;
+    justify-content: center;}
+.contact-link { display: inline-flex; gap: 8px; align-items: center; color: inherit; text-decoration: none; }
+.contact-link svg { opacity: 0.9; }
+
+/* itch button inside contact page */
+.itch-btn { display: inline-flex; align-items: center; gap: 8px; padding: px; margin-bottom: 5px;}
+.itch-btn img { height: 30px; width: auto; display: block; }
+
+.contact-form { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+.contact-form label { font-size: 0.9rem; }
+.contact-form input,
+.contact-form textarea {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.1);
+  font-family: inherit;
+}
+.contact-form input:focus, .contact-form textarea:focus { outline: none; box-shadow: 0 0 0 3px rgba(125,126,216,0.12); }
+.contact-form .StandardBtn { align-self: flex-start; margin-top: 6px; }
+
+.form-status { margin-top: 8px; font-size: 0.95rem; min-height: 1.2em; }
+.form-status.sending { color: #666; }
+.form-status.success { color: #0a7a24; }
+.form-status.error { color: #b00020; }
+
+@media (max-width: 800px) {
+  .contact-row { flex-direction: column; }
+}
+
+.SkillHolder
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.SkillHolder h2{
+  font-size: 2rem;
+  font-family: "Sniglet";
+  font-weight: normal;
+}
+
+.SkillsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Sniglet";
+  font-weight: normal;
+  align-items: center;
+}
+
+.SkillsContainer ul{
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Sniglet";
+}
+
+
+.QualificationsSection
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.QualificationsHolder h2{
+  font-size: 2rem;
+  font-family: "Sniglet";
+  font-weight: normal;
+}
+
+.QualificationsHolder
+{
+  font-family: "Sniglet";
+  font-weight: normal;
+  width: 40%;
+}
+
+.italic
+{
+  font-style: italic;
+}
+
+/* Games that inspire - card styles */
+.inspire-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 80%;
+  max-width: 900px;
+  margin: 20px 0;
+}
+
+.inspire-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: rgba(255,255,255,0.06);
+  border: 3px solid #ffd200;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.purpleBackground
+{
+ background: #79278763;
+}
+
+.blueBackground
+{
+  background: #3d7fb86b;
+}
+
+.inspire-card img {
+  width: 50%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.inspire-content {
+  flex: 1;
+}
+
+.inspire-content li{
+  font-family: "Sniglet";
+}
+
+.inspire-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: "Fugaz One";
+}
+
+.headingFont {
+  font-family: "Fugaz One";
+
+}
+
+.inspire-content p {
+  margin: 6px 0 0;
+  font-family: "Sniglet";
+}
+
+@media (max-width: 600px) {
+  .inspire-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inspire-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.DegreeHeading
+{
+  font-size: larger;
+  font-family: "Fugaz One";
+}
+
+.AboutSectionContainer p{
+  font-family: "Sniglet";
+}
+
+button{
+  background-color: #ffffff00;
+}
+
+label{
+  font-family: "Sniglet";
+}
+
+/* ===== GAME PORTFOLIO STYLES ===== */
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-section h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Games Grid */
+.games-grid {
+  display: grid;
+  /* use fixed column width so the overall grid can be centered when not full */
+  grid-template-columns: repeat(auto-fit, minmax(340px, 340px));
+  gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  justify-content: center; /* center grid content when columns don't fill container */
+  justify-items: center;
+}
+
+/* removed special-case centering to keep capsules consistent width */
+/* Game Capsule */
+.game-capsule {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgba(255, 210, 0, 0.5);
+  border-radius: 25px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  /* Keep capsules a consistent width and center them in their grid cell */
+  max-width: 340px;
+  width: 340px;
+  justify-self: center;
+}
+
+/* When JS marks the last capsule as single-last, span the row and center its fixed-width box */
+.games-grid .game-capsule.single-last {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.game-capsule:hover {
+  transform: translateY(-8px);
+  border-color: #ffd200;
+  box-shadow: 0 12px 32px rgba(120, 39, 135, 0.4), 0 0 20px rgba(255, 210, 0, 0.3);
+}
+
+.capsuleBlue
+{
+  background: #3d7eb8;
+}
+
+.capsuleBlue:hover
+{
+    background: #782787;
+}
+
+.capsulePurple
+{
+  background: #782787;
+}
+
+.capsulePurple:hover
+{
+    background: #3d7eb8;
+}
+
+.capsule-image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(61, 126, 184, 0.25), rgba(120, 39, 135, 0.25));
+  border-bottom: 2px solid rgba(255, 210, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.capsule-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.game-capsule:hover .capsule-image-container img {
+  transform: scale(1.05);
+}
+
+.capsule-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.capsule-content h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.3rem;
+  font-family: "Fugaz One";
+}
+
+.game-capsule-btn {
+  padding: 10px 20px;
+  border: 2px solid #ffd200;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #ffd200;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+}
+
+.game-capsule-btn:hover {
+  background: linear-gradient(90deg, #782787, #3d7eb8);
+  color: #ffd200;
+  border-color: #ffd200;
+}
+
+/* ===== GAME MODAL STYLES ===== */
+
+.game-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.modal-content {
+  position: relative;
+  z-index: 1001;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border: 2px solid #ffd200;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 95vh;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  color: #ffd200;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 1002;
+}
+
+.modal-close:hover {
+  transform: scale(1.2);
+}
+
+.modal-main {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  flex: 1;
+}
+
+/* Left side: Images */
+.modal-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-image-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(120, 39, 135, 0.8);
+  border: 2px solid #ffd200;
+  color: #ffd200;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.nav-arrow:hover {
+  background: rgba(120, 39, 135, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.left-arrow {
+  left: 15px;
+}
+
+.right-arrow {
+  right: 15px;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgba(255, 210, 0, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  border-color: #ffd200;
+  transform: scale(1.05);
+}
+
+
+/* ===== PROJECT MODAL THUMBNAILS ===== */
+
+.carousel-thumb {
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgba(255, 210, 0, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.carousel-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-thumb:hover,
+.carousel-thumb.active {
+  border-color: #ffd200;
+  transform: scale(1.05);
+}
+
+
+
+/* Right side: Info */
+.modal-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.modal-right h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Fugaz One";
+  color: #782787;
+  text-shadow:
+    1px 1px 0 #ffd200,
+    -1px -1px 0 #ffd200,
+    1px -1px 0 #ffd200,
+    -1px 1px 0 #ffd200;
+}
+
+/* Game Tags */
+.game-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-family: "Sniglet";
+  color: white;
+}
+
+.tag-design {
+  background-color: #3d7eb8;
+}
+
+.tag-game-design {
+  background-color: #3d7eb8;
+}
+
+.tag-level-design {
+  background-color: #f3841d;
+}
+
+.tag-systems-design {
+  background-color: #f3377c;
+}
+
+.tag-programming {
+  background-color: #782787;
+}
+
+.tag-art {
+  background-color: #ff6b6b;
+}
+
+.tag-audio {
+  background-color: #ffa500;
+}
+
+.tag-narrative {
+  background-color: #06d6a0;
+}
+
+.tag-manufacturing {
+  background-color: #99d0ff;
+}
+
+.tag-prop-design {
+  background-color: #9d59f7;
+}
+
+/* Game description */
+.modal-right p {
+  margin: 0;
+  line-height: 1.6;
+  font-family: "Sniglet";
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modal-btn {
+  flex: 1;
+  padding: 12px 24px;
+  border: 2px solid #ffd200;
+  border-radius: 25px;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+.modal-btn:hover {
+  background: linear-gradient(90deg, #782787, #3d7eb8);
+  color: #ffd200;
+}
+
+
+
+.itch-btn:hover {
+  border-color: #ffd200;
+}
+
+.doc-btn {
+  border-color: #748ffc;
+}
+
+.doc-btn:hover {
+  border-color: #ffd200;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .modal-main {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .main-image-container {
+    height: 350px;
+  }
+  
+  .modal-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .games-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .capsule-image-container {
+    height: 220px;
+  }
+  
+  .modal-content {
+    width: 95%;
+    max-height: 85vh;
+  }
+  
+  .modal-main {
+    padding: 20px;
+  }
+  
+  .nav-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  
+  .modal-right h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .game-tags {
+    gap: 8px;
+  }
+  
+  .tag {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .modal-buttons {
+    flex-direction: column;
+  }
+  
+  .modal-close {
+    font-size: 30px;
+  }
+}

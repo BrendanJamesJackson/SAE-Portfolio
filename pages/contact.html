@@ -1,0 +1,75 @@
+<div class="AboutSectionContainer contact-container">
+  <h2 class="blueClass yellow-outline-shadow">Contact</h2>
+
+  <div class="contact-row">
+    <div class="contact-left">
+      <p>
+        If you'd like to get in touch, email me or use the form to send a
+        message.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:brendanjj50@gmail.com" class="StandardBtn itch-btn">
+          <!-- simple mail icon -->
+
+          brendanjj50@gmail.com
+        </a>
+
+        <a
+          href="https://brendan-jax.itch.io/"
+          target="_blank"
+          rel="noopener"
+          class="StandardBtn itch-btn"
+        >
+          <img src="../Images/itch.io.png" alt="itch logo" />
+          itch.io
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/brendan-jax-jackson/"
+          target="_blank"
+          rel="noopener"
+          class="StandardBtn itch-btn"
+        >
+          <img src="../Images/linkedin.png" alt="LinkedIn logo" />
+          LinkedIn
+        </a>
+
+        <a
+          href="https://www.instagram.com/jax.cosplay/"
+          target="_blank"
+          rel="noopener"
+          class="StandardBtn itch-btn"
+        >
+          <img src="../Images/instagram.png" alt="Instagram logo" />
+          Instagram
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <form id="contactForm" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="StandardBtn">Send Message</button>
+        <div id="contactStatus" class="form-status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--
+  Notes:
+  - Replace the mailto link and external URLs above with your real addresses.
+  - The form uses the user's mail client via a mailto: link. If you want the
+    form to send directly to your email without opening a mail client, set up
+    a form endpoint (Formspree, Netlify Forms, EmailJS, or your own backend)
+    and set the form's `action` attribute accordingly.
+-->
